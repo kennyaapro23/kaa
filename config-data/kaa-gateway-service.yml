@@ -17,17 +17,17 @@ spring:
         locator:
           enable: true
       routes:
-        - id: ms-course-service
-          uri: lb://ms-course-service
+        - id: kaa-course-service
+          uri: lb://kaa-course-service
           predicates:
             - Path=/courses/**
 
-        - id: ms-student-service
-          uri: lb://ms-student-service
+        - id: kaa-student-service
+          uri: lb://kaa-student-service
           predicates:
             - Path=/students/**
 
-        - id: ms-enrollment-service
-          uri: lb://ms-enrollment-service
+        - id: kaa-enrollment-service
+          uri: lb://kaa-enrollment-service
           predicates:
             - Path=/enrollments/**

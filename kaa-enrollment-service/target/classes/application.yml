@@ -1,6 +1,6 @@
 spring:
   application:
-    name: kaa-course-service
+    name: kaa-enrollment-service
   profiles:
     active: development
   config:
